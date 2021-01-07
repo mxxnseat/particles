@@ -1,0 +1,32 @@
+{
+  "name": "particles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "server": "node server.js",
+    "build": "webpack",
+    "dev": "webpack serve --config webpack.dev.config.js --mode development --hot"
+  },
+  "keywords": [],
+  "author": "mxxnseat",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.10.1",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.7.0"
+  },
+  "babel": {
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-private-methods"
+    ]
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-private-methods": "^7.12.1"
+  }
+}
